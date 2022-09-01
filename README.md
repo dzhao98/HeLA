@@ -32,3 +32,8 @@ gatk --java-options -Xmx60g FilterMutectCalls \
             
             gatk --java-options -Xmx60g FilterMutectCalls -V /projects/verhaak-lab/dzhao/HeLasequence/Mutect/A13/A13unfiltered.vcf -R /projects/verhaak-lab/GLASS-NF/references/GRCh38/Homo_sapiens_assembly38.fasta --stats /projects/verhaak-lab/dzhao/HeLasequence/Mutect/A13/A13unfiltered.vcf.stats   -O /projects/verhaak-lab/dzhao/HeLasequence/Mutect/A13/A13filtered.vcf
             
+            
+            
+       gatk PlotDenoisedCopyRatios --standardized-copy-ratios /projects/verhaak-lab/dzhao/HeLasequence/A2/A2.standardizedCR.tsv --denoised-copy-ratios /projects/verhaak-lab/dzhao/HeLasequence/A2/A2.denoisedCR.tsv --sequence-dictionary /projects/verhaak-lab/GLASS-NF/references/GRCh37/Homo_sapiens_assembly19.dict  --minimum-contig-length 46709983 --output /projects/verhaak-lab/dzhao/HeLasequence/A2 --output-prefix A2
+     
+ 
